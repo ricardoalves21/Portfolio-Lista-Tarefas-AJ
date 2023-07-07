@@ -1,0 +1,48 @@
+.cabecalho {
+  background: url(/assets/imagens/fundo-cabecalho.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2rem 2rem 0.2rem 2rem;
+}
+
+.cabecalho .logo {
+  width: 35%;
+  padding: 1rem 1.5rem;
+}
+
+.cabecalho .logo img {
+  width: 22%;
+  max-width: 350px;
+  margin-bottom: 1rem;
+}
+
+.cabecalho .imagem {
+  width: 12%;
+}
+
+.cabecalho p {
+  font-size: 1rem;
+  color: #154580;
+}
+
+@media (max-width: 576px) {
+  .cabecalho .logo {
+    padding: 2rem;
+  }
+
+  .cabecalho p {
+    font-size: 1.5rem
+  }
+}
+
+@media (max-width: 768px) {
+  .cabecalho .logo {
+    width: 90%;
+  }
+
+  .cabecalho .imagem {
+    display: none;
+  }
+}

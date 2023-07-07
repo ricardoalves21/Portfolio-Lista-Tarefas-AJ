@@ -1,0 +1,69 @@
+<section class="container criar-tarefas ff-inter">
+  <header class="header">
+    <h2>ADICIONE UMA NOVA TAREFA:</h2>
+  </header>
+  <form>
+    <label for="tarefa">Tarefa</label>
+    <input type="textarea" class="input" id="tarefa" name="tarefa" placeholder="Descreva a tarefa" [(ngModel)]="tarefa.conteudo">
+
+    <label for="responsavel">Responsavel</label>
+    <input type="text" class="input" id="responsavel" name="responsavel" placeholder="Digite o responsavel pela tarefa" [(ngModel)]="tarefa.responsavel">
+
+    <label for="etapa">Selecine a etapa da tarefa:</label>
+    <div class="container-radio">
+      <div class="radio-etapa">
+        <label for="etapa1">
+          <input type="radio" id="etapa1" value="etapa1" name="etapa-card" [(ngModel)]="tarefa.etapa">
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>A fazer</span>
+        </label>
+        Prévia:
+        <div class="etapa etapa1 ff-roboto-mono">
+          <img src="../../../../assets/imagens/etapa1.png" alt="Tarefa pendente">
+          <p class="conteudo">{{ tarefa.conteudo }}</p>
+          <p class="responsavel"><b>{{ tarefa.responsavel }}</b></p>
+        </div>
+      </div>
+
+      <div class="radio-etapa">
+        <label for="etapa2">
+          <input type="radio" id="etapa2" value="etapa2" name="etapa-card" [(ngModel)]="tarefa.etapa">
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>Fazendo</span>
+        </label>
+        Prévia:
+        <div class="etapa etapa2 ff-roboto-mono">
+          <img src="../../../../assets/imagens/etapa2.png" alt="Tarefa pendente">
+          <p class="conteudo">{{ tarefa.conteudo }}</p>
+          <p class="responsavel"><b>{{ tarefa.responsavel }}</b></p>
+        </div>
+      </div>
+
+      <div class="radio-etapa">
+        <label for="etapa3">
+          <input type="radio" id="etapa3" value="etapa3" name="etapa-card" [(ngModel)]="tarefa.etapa">
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>Feito</span>
+        </label>
+        Prévia:
+        <div class="etapa etapa3 ff-roboto-mono">
+          <img src="../../../../assets/imagens/etapa3.png" alt="Tarefa pendente">
+          <p class="conteudo">{{ tarefa.conteudo }}</p>
+          <p class="responsavel"><b>{{ tarefa.responsavel }}</b></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="acoes">
+      <button (click)="criarTarefa()" class="botao">Salvar</button>
+      <button (click)="cancelarTarefa()" class="botao">Cancelar</button>
+    </div>
+
+  </form>
+</section>

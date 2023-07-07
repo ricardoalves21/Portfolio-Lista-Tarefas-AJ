@@ -1,0 +1,17 @@
+<div class="tarefa {{ tarefa.etapa }} ff-roboto-mono" [ngClass]="larguraTarefa()">
+  <img src="../../../../assets/imagens/{{ tarefa.etapa }}.png" alt="Icone da etapa">
+  <p class="conteudo">{{ tarefa.conteudo }}</p>
+  <p class="responsavel"><b>{{ tarefa.responsavel }}</b></p>
+  <div class="acoes">
+    <button class="botao-editar">
+      <img src="../../../../assets/imagens/icone-editar.png"
+           routerLink="/tarefas/editarTarefa/{{ tarefa.id }}"
+           alt="Icone de editar">
+    </button>
+    <button class="botao-excluir">
+      <img src="../../../../assets/imagens/icone-excluir.png"
+           routerLink="/tarefas/excluirTarefa/{{ tarefa.id }}"
+           alt="Icone de excluir">
+    </button>
+  </div>
+</div>
