@@ -12,7 +12,7 @@ através do método de INJEÇÃO DE DEPENDÊNCIAS*/
 //Esta classe 'TarefaService' está sendo exportada juntamente com o seu construtor
 export class TarefaService {
   //Criando o atributo API
-  private readonly API = 'http://localhost:3000/tarefas';
+  private readonly API = 'api/tarefas';
 
   constructor(private http: HttpClient) {}
 
