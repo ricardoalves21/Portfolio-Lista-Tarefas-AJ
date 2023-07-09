@@ -13,13 +13,6 @@ export class TarefaComponent implements OnInit {
   @Input()
   tarefa!: Tarefa;
 
-  //   tarefa: Tarefa = {
-  //   id: 0,
-  //   conteudo: 'I love Angular',
-  //   responsavel: 'Ricardo',
-  //   etapa: 'etapa3',
-  // };
-
   constructor() {}
 
   ngOnInit(): void {}
