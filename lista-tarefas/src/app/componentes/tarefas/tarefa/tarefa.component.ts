@@ -11,12 +11,14 @@ export class TarefaComponent implements OnInit {
   //A variável 'tarefa' precisa ser tipada com o modelo definido na interface 'tarefa.ts'
   //Agora, o contrato precisa ser seguido à risca, por isso o objeto precisa conter TODOS os atributos definidos na interface
   @Input()
-  tarefa: Tarefa = {
-    id: 0,
-    conteudo: 'I love Angular',
-    responsavel: 'Ricardo',
-    etapa: 'etapa3',
-  };
+  tarefa!: Tarefa;
+
+  //   tarefa: Tarefa = {
+  //   id: 0,
+  //   conteudo: 'I love Angular',
+  //   responsavel: 'Ricardo',
+  //   etapa: 'etapa3',
+  // };
 
   constructor() {}
 

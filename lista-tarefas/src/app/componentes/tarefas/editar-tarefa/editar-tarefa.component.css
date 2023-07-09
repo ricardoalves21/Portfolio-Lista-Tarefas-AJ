@@ -78,15 +78,15 @@
 }
 
 .etapa1 {
-  box-shadow: 8px 8px 0px #154580;
+  box-shadow: 8px 8px 0px #ff0000;
 }
 
 .etapa2 {
-  box-shadow: 8px 8px 0px #6BD1FF;
+  box-shadow: 8px 8px 0px #0044ff;
 }
 
 .etapa3 {
-  box-shadow: 8px 8px 0px #84EEC1;
+  box-shadow: 8px 8px 0px #00ff22;
 }
 
 input[type='radio'] {
