@@ -12,7 +12,7 @@ através do método de INJEÇÃO DE DEPENDÊNCIAS*/
 //Esta classe 'TarefaService' está sendo exportada juntamente com o seu construtor
 export class TarefaService {
   //Criando o atributo API
-  private readonly API = 'api/tarefas';
+  private readonly API = 'https://possible-toes-production.up.railway.app/api/tarefas';
 
   constructor(private http: HttpClient) {}
 
