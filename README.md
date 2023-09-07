@@ -15,7 +15,6 @@ No momento da inserção ou edição da tarefa, o usuário poderá ter uma prév
 - HTML
 - CSS
 - Bootstrap
-- Lottie Animations
 
 ### Tecnologias Utilizadas no Back-end:
 
@@ -36,4 +35,4 @@ No momento da inserção ou edição da tarefa, o usuário poderá ter uma prév
 
 - Railway
 
-> **Observação:** O projeto back-end deste Portfólio está neste [link](https://github.com/ricardoalves21/Portfolio-Lista-Tarefas-Back): 
+> **Observação:** O projeto back-end desta Lista de Tarefas está neste [link](https://github.com/ricardoalves21/Portfolio-Lista-Tarefas-Back): 
